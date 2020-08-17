@@ -32,6 +32,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 # Gems added by Drew
 gem 'bootstrap', '~> 4.1.1'
+gem 'devise'
 gem 'font-awesome-rails'
 gem 'jquery-rails'
 gem 'pg'
