@@ -8,7 +8,7 @@
 
     <div class="col-md-8 basic-info">
       <div class="user-wrapper">
-        <h2 class="username">backwardhatkid</h2>
+        <h2 class="username"><%= current_user.username %></h2>
         <a class="edit-profile" href="<%= edit_user_path(current_user) %>">
           <button>Edit Profile</button>
         </a>
@@ -18,8 +18,8 @@
         <li><span>420</span> followers</li>
         <li><span>690</span> following</li>
       </ul>
-      <h2 class="name">Drew Pope</h2>
-      <a class="website">DrewP.gg</a>
+      <h2 class="name"><%= current_user.name %></h2>
+      <%=link_to current_user.website, current_user.website, class:  'website' %>
     </div>
     <div class="user-tabs">
       <a class="tab active" href="">
